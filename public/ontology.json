@@ -1,0 +1,89 @@
+{
+    "@context": {
+      "name": "http://schema.org/name",
+      "type": "@type",
+      "Person": "http://schema.org/Person",
+      "Project": "http://schema.org/CreativeWork",
+      "Skill": "http://schema.org/DefinedTerm",
+      "Certification": "http://schema.org/EducationalOccupationalCredential",
+      "Education": "http://schema.org/EducationalOrganization",
+      "Experience": "http://schema.org/Organization",
+      "hasSkill": "http://schema.org/knowsAbout",
+      "hasProject": "http://schema.org/creatorOf",
+      "hasCertification": "http://schema.org/hasCredential",
+      "studiedAt": "http://schema.org/alumniOf",
+      "workedOn": "http://schema.org/memberOf",
+      "usesTool": "http://schema.org/uses"
+    },
+    "@graph": [
+      {
+        "@id": "person:Agradeep_Sarkar",
+        "@type": "Person",
+        "name": "Agradeep Sarkar",
+        "hasSkill": ["skill:Python", "skill:C++", "skill:Java", "skill:React", "skill:Next.js", "skill:Firebase", "skill:BurpSuite", "skill:MachineLearning"],
+        "hasProject": ["project:LostFoundSystem", "project:PlanX", "project:SentimentAnalysis", "project:CPUScheduler"],
+        "hasCertification": ["cert:Fortinet", "cert:IBM_AI", "cert:Cisco_Networking"],
+        "studiedAt": ["edu:SRM_IST", "edu:MP_Birla_HS"],
+        "workedOn": ["exp:Shoishob_Volunteering"]
+      },
+  
+      {
+        "@id": "project:LostFoundSystem",
+        "@type": "Project",
+        "name": "Smart Lost & Found System",
+        "usesTool": ["skill:Next.js", "skill:Firebase", "skill:TailwindCSS"]
+      },
+      {
+        "@id": "project:PlanX",
+        "@type": "Project",
+        "name": "PlanX - Task Manager",
+        "usesTool": ["skill:Next.js", "skill:Firebase", "skill:TypeScript"]
+      },
+      {
+        "@id": "project:SentimentAnalysis",
+        "@type": "Project",
+        "name": "Product Sentiment Analysis",
+        "usesTool": ["skill:Python", "skill:TensorFlow", "skill:BERT"]
+      },
+      {
+        "@id": "project:CPUScheduler",
+        "@type": "Project",
+        "name": "CPU Scheduling Simulator",
+        "usesTool": ["skill:Python", "skill:Tkinter", "skill:Matplotlib"]
+      },
+  
+      {
+        "@id": "cert:Fortinet",
+        "@type": "Certification",
+        "name": "Fortinet Certified Associate in Cybersecurity"
+      },
+      {
+        "@id": "cert:IBM_AI",
+        "@type": "Certification",
+        "name": "IBM AI Developer Specialization"
+      },
+      {
+        "@id": "cert:Cisco_Networking",
+        "@type": "Certification",
+        "name": "Cisco Networking Basics"
+      },
+  
+      {
+        "@id": "edu:SRM_IST",
+        "@type": "Education",
+        "name": "SRM Institute of Science and Technology"
+      },
+      {
+        "@id": "edu:MP_Birla_HS",
+        "@type": "Education",
+        "name": "MP Birla Foundation Higher Secondary School"
+      },
+  
+      {
+        "@id": "exp:Shoishob_Volunteering",
+        "@type": "Experience",
+        "name": "Volunteering at SHOISHOB-A Foundation for Children"
+      }
+    ]
+  }
+  
